@@ -66,12 +66,20 @@ GSPEECHKEY=your_google_speech_api_key_here
 See [`example.js`](/example.js)
 
 
+Add the module 
+
+```bash
+npm install https://github.com/pietrop/gcloud_speech_electron -save
+```
+
+
 ```javascript
 'use strict';
 require('dotenv').config();
 const APIKEY= process.env.GSPEECHKEY;
 
-var Speech = require('./index.js');
+var Speech = require('gcloud_speech_electron');
+//var Speech = require('./index.js');
 
 var sampleAudio = './brooklyn.wav';
 
