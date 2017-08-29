@@ -72,11 +72,17 @@ Add the module
 npm install https://github.com/pietrop/gcloud_speech_electron -save
 ```
 
+Use as follow 
 
 ```javascript
 'use strict';
-require('dotenv').config();
-const APIKEY= process.env.GSPEECHKEY;
+
+//Get google API keys here https://support.google.com/cloud/answer/6158862?hl=en
+
+//require('dotenv').config();
+//const APIKEY= process.env.GSPEECHKEY;
+
+const APIKEY= `your_google_api_keys_here`;
 
 var Speech = require('gcloud_speech_electron');
 //var Speech = require('./index.js');
